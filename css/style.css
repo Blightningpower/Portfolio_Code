@@ -1,0 +1,431 @@
+@font-face {
+  font-family: "MX";
+  src: url("https://i484476.hera.fhict.nl/Portfolio/mx-2-font/MX-Regular.woff2")
+      format("woff2"),
+    url("https://i484476.hera.fhict.nl/Portfolio/mx-2-font/MX-Regular.woff")
+      format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lucida Console";
+  src: url("https://i484476.hera.fhict.nl/Portfolio/Lucida-Console-font/LucidaConsole.woff2")
+      format("woff2"),
+    url("https://i484476.hera.fhict.nl/Portfolio/Lucida-Console-font/LucidaConsole.woff")
+      format("woff");
+}
+
+* {
+  /*code applied to all HTML tags*/
+  font-family: "MX", Arial, "Lucida Console";
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+html {
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url(https://i484476.hera.fhict.nl/Portfolio//img/Double\ Gradient\ Background\ Black_2.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--contrast-color);
+
+}
+
+body {
+  /*code applied to the whole body of the page*/
+  min-width: 100%;
+  min-height: -webkit-fill-available;
+  margin: 0;
+}
+
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 22px;
+  padding: 0 5%;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+li {
+    padding: 1% 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::marker {
+  display: none;
+}
+
+h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 0 2%;
+    text-align: center;
+    max-width: fit-content;
+    margin: auto 0 0 0;
+}
+
+/* Homepagecode */
+
+/* fade out effect Wolf Eyes*/
+
+.homepageDiv {
+  width: auto;
+  min-height: 94vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.fade-out-image {
+  transition: opacity 1s ease-out;
+  min-width: 50%;
+  max-width: 50%;
+  position: absolute;
+  margin: auto;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+/* fade in elements*/
+
+.fadeInElements {
+  opacity: 0;
+}
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+  height: 100%;
+  margin: 0;
+}
+
+.homePageTitle {
+  font-family: "Lucida Console", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 3%;
+  color: #f2f2f2;
+}
+
+.BAlogo {
+  width: 98vw;
+  max-height: 24vh;
+  display: flex;
+  justify-content: center;
+  margin: 9% 0 0 0;
+}
+
+/* .logoBavli, .logoArmanyous {
+    display: flex;
+    align-items: center;
+} */
+
+.logoB,
+.logoA {
+  position: relative;
+  z-index: 1;
+  min-width: 10%;
+  max-width: 10%;
+  margin: 0;
+  left: 0;
+  right: 0;
+  transition: all 1s linear;
+}
+
+.textRestFname,
+.textRestLname {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  height: 21.105vh;
+  margin-top: 1%;
+}
+
+@media screen and (min-width: 1279px) {
+.logoB {
+  left: -25%;
+}
+
+.logoA {
+  left: -5%;
+}
+
+.textRestFname,
+.textRestLname {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  height: 21.105vh;
+  margin-top: 1%;
+}
+
+.textRestFname {
+  left: 24%;
+}
+
+.textRestLname {
+  right: 11%;
+}
+}
+
+@media screen and (max-width: 1230px) {
+  .textRestFname,
+  .textRestLname {
+    transform: scale(0.5);
+    
+  }
+
+  .logoB {
+    left: -20%;
+  }
+  
+  .logoA {
+    right: 5%;
+  }
+  
+  .textRestFname {
+    top: 16%;
+    left: 22%;
+    opacity: 1;
+    font-size: 2rem;
+  }
+  
+  .textRestLname {
+    top: 16%;
+    left: 42%;
+    opacity: 1;
+    font-size: 2rem;
+  }
+}
+
+.homeMenuButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 8% auto;
+  text-decoration: none;
+}
+
+.homeMenuButtons a {
+  margin: 0 5%;
+}
+
+.overMijText,
+.leeruitkomstenText {
+  color: #f2f2f2;
+  font-size: larger;
+}
+
+.overMijText:hover,
+.leeruitkomstenText:hover {
+  color: #595959;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #3f0202;
+}
+
+.overMijText:active,
+.leeruitkomstenText:active {
+  color: #000000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f2f2f2;
+}
+
+.copyrightText {
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 1%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+.linkMenu {
+  float: left;
+  width: -webkit-fill-available;
+  padding: 1% 3% 6% 0 !important;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  color: #f2f2f2;
+  font-size: larger;
+  text-decoration: none;
+  font-weight: 600;
+  align-items: baseline;
+  max-height: 7vh;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+.linkMenu a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-family: "Lucida Console", Arial, Helvetica, sans-serif;
+  font-weight: revert;
+}
+
+@media screen and (max-width: 1279px) {
+  .linkMenu {
+    flex-wrap: wrap;
+    margin-bottom: 7%;
+  }
+
+  .linkMenu a {
+    padding: 2% !important;
+  }
+}
+
+.link {
+  color: #0000ff;
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-decoration: underline;
+}
+
+.homepageLink,
+.activeLink {
+  padding: 0 1% !important;
+}
+
+.homepageLink:hover,
+.activeLink:hover {
+  color: #595959;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #3f0202;
+}
+
+.homepageLink:active,
+.activeLink:active {
+  color: #000000;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #3f0202;
+}
+
+.homepageLink.active,
+.activeLink.active {
+  color: #000000;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #3f0202;
+  text-shadow: 0 0 10px #f2f2f2, 0 0 20px #f2f2f2, 0 0 30px #f2f2f2,
+    0 0 40px #f2f2f2, 0 0 50px #f2f2f2, 0 0 60px #f2f2f2, 0 0 70px #f2f2f2;
+}
+
+.h1Title {
+  text-align: center;
+  height: fit-content;
+  max-height: fit-content;
+  width: fit-content;
+  margin: 0 auto 2%;
+  color: #f2f2f2;
+  display: flex;
+}
+
+.overMijSubtitle {
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto 5%;
+  padding-top: 5%;
+  color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+/* --- */
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 99;
+  border: 2px solid black;
+  outline: none;
+  background-color: #3f0202;
+  color: white;
+  cursor: pointer;
+  padding: 1%;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1279px) {
+  #scrollToTopBtn {
+    padding: 2%;
+  }
+}
+
+#scrollToTopBtn:hover {
+  background-color: #595959;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+#scrollToTopBtn:hover .arrow.up {
+  border-color: #3f0202;
+}
+
+/* Scrollbar */
+/* width */
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #595959;
+  border: 2px solid #f2f2f2;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f2f2f2;
+  border: 2px solid #590404;
+}

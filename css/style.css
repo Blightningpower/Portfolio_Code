@@ -1,8 +1,8 @@
 @font-face {
   font-family: "MX";
-  src: url("https://i484476.hera.fhict.nl/Portfolio/mx-2-font/MX-Regular.woff2")
+  src: url("https://blightningpower.github.io/Portfolio_Code/mx-2-font/MX-Regular.woff2")
       format("woff2"),
-    url("https://i484476.hera.fhict.nl/Portfolio/mx-2-font/MX-Regular.woff")
+    url("https://blightningpower.github.io/Portfolio_Code/mx-2-font/MX-Regular.woff")
       format("woff");
   font-style: normal;
   font-display: swap;
@@ -10,9 +10,9 @@
 
 @font-face {
   font-family: "Lucida Console";
-  src: url("https://i484476.hera.fhict.nl/Portfolio/Lucida-Console-font/LucidaConsole.woff2")
+  src: url("https://blightningpower.github.io/Portfolio_Code/Lucida-Console-font/LucidaConsole.woff2")
       format("woff2"),
-    url("https://i484476.hera.fhict.nl/Portfolio/Lucida-Console-font/LucidaConsole.woff")
+    url("https://blightningpower.github.io/Portfolio_Code/Lucida-Console-font/LucidaConsole.woff")
       format("woff");
 }
 
@@ -28,7 +28,7 @@
 html {
   min-height: 100%;
   min-width: 100%;
-  background-image: url(https://i484476.hera.fhict.nl/Portfolio//img/Double\ Gradient\ Background\ Black_2.png) !important;
+  background-image: url(https://blightningpower.github.io/Portfolio_Code//img/Double\ Gradient\ Background\ Black_2.png) !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--contrast-color);

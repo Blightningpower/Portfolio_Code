@@ -58,7 +58,7 @@
   window.addEventListener('load', maxScreenSize_1230px);
   window.addEventListener('resize', maxScreenSize_1230px);
 
-  BAlogo.addEventListener('mouseover', () => {
+  logoA.addEventListener('mouseover', () => {
     maxScreenSize_1230px();
   });
 

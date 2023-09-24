@@ -371,7 +371,7 @@ h3 {
   z-index: 99;
   border: 2px solid var(--portfolioBlack);
   outline: none;
-  background-color: var(--portfolioDarkRed);
+  background-color: var(--portfolioRed);
   color: var(--portfolioWhite);
   cursor: pointer;
   padding: 1%;
@@ -386,6 +386,10 @@ h3 {
 
 #scrollToTopBtn:hover {
   background-color: var(--portfolioGrey);
+}
+
+#scrollToTopBtn:active {
+  background-color: var(--portfolioWhite);
 }
 
 .arrow {

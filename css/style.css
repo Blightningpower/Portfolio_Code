@@ -16,6 +16,15 @@
       format("woff");
 }
 
+:root {
+  --portfolioWhite: #f2f2f2;
+  --portfolioGrey: #595959;
+  --porfolioDarkRed: #3f0202;
+  --portfolioBlack: #260202;
+  --portfolioRed: #590404;
+  --hyperLinkBlue: #0000ff;
+}
+
 * {
   /*code applied to all HTML tags*/
   font-family: "MX", Arial, "Lucida Console";
@@ -31,8 +40,6 @@ html {
   background-image: url(https://blightningpower.github.io/Portfolio_Code//img/Double\ Gradient\ Background\ Black_2.png) !important;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--contrast-color);
-
 }
 
 body {
@@ -43,7 +50,7 @@ body {
 }
 
 p {
-  color: white;
+  color: var(--portfolioWhite);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 22px;
   padding: 0 5%;
@@ -67,7 +74,7 @@ li {
 }
 
 h3 {
-    color: white;
+    color: var(--portfolioWhite);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-transform: capitalize;
@@ -124,7 +131,7 @@ h3 {
   width: fit-content;
   margin: 0 auto;
   padding-top: 3%;
-  color: #f2f2f2;
+  color: var(--portfolioWhite);
 }
 
 .BAlogo {
@@ -234,27 +241,27 @@ h3 {
 
 .overMijText,
 .leeruitkomstenText {
-  color: #f2f2f2;
+  color: var(--portfolioWhite);
   font-size: larger;
 }
 
 .overMijText:hover,
 .leeruitkomstenText:hover {
-  color: #595959;
+  color: var(--portfolioGrey);
   -webkit-text-stroke-width: 0.2px;
-  -webkit-text-stroke-color: #3f0202;
+  -webkit-text-stroke-color: var(--porfolioDarkRed);
 }
 
 .overMijText:active,
 .leeruitkomstenText:active {
-  color: #000000;
+  color: var(--portfolioBlack);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #f2f2f2;
+  -webkit-text-stroke-color: var(--portfolioWhite);
 }
 
 .copyrightText {
   font-size: small;
-  color: white;
+  color: var(--portfolioWhite);
   text-align: center;
   margin: 0;
   padding-top: 1%;
@@ -270,7 +277,7 @@ h3 {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  color: #f2f2f2;
+  color: var(--portfolioWhite);
   font-size: larger;
   text-decoration: none;
   font-weight: 600;
@@ -282,7 +289,7 @@ h3 {
 }
 
 .linkMenu a {
-  color: #f2f2f2;
+  color: var(--portfolioWhite);
   text-decoration: none;
   font-family: "Lucida Console", Arial, Helvetica, sans-serif;
   font-weight: revert;
@@ -300,7 +307,7 @@ h3 {
 }
 
 .link {
-  color: #0000ff;
+  color: var(--hyperLinkBlue);
   font-family: Arial, Helvetica, sans-serif !important;
   text-decoration: underline;
 }
@@ -312,25 +319,25 @@ h3 {
 
 .homepageLink:hover,
 .activeLink:hover {
-  color: #595959;
+  color: var(--portfolioGrey);
   -webkit-text-stroke-width: 0.2px;
-  -webkit-text-stroke-color: #3f0202;
+  -webkit-text-stroke-color: var(--portfolioDarkRed);
 }
 
 .homepageLink:active,
 .activeLink:active {
-  color: #000000;
+  color: var(--portfolioBlack);
   -webkit-text-stroke-width: 0.2px;
-  -webkit-text-stroke-color: #3f0202;
+  -webkit-text-stroke-color: var(--portfolioDarkRed);
 }
 
 .homepageLink.active,
 .activeLink.active {
-  color: #000000;
+  color: var(--portfolioBlack);
   -webkit-text-stroke-width: 0.2px;
-  -webkit-text-stroke-color: #3f0202;
-  text-shadow: 0 0 10px #f2f2f2, 0 0 20px #f2f2f2, 0 0 30px #f2f2f2,
-    0 0 40px #f2f2f2, 0 0 50px #f2f2f2, 0 0 60px #f2f2f2, 0 0 70px #f2f2f2;
+  -webkit-text-stroke-color: var(--portfolioDarkRed);
+  text-shadow: 0 0 10px var(--portfolioWhite), 0 0 20px var(--portfolioWhite), 0 0 30px var(--portfolioWhite),
+    0 0 40px var(--portfolioWhite), 0 0 50px var(--portfolioWhite), 0 0 60px var(--portfolioWhite), 0 0 70px var(--portfolioWhite);
 }
 
 .h1Title {
@@ -339,7 +346,7 @@ h3 {
   max-height: fit-content;
   width: fit-content;
   margin: 0 auto 2%;
-  color: #f2f2f2;
+  color: var(--portfolioWhite);
   display: flex;
 }
 
@@ -349,7 +356,7 @@ h3 {
   width: fit-content;
   margin: 0 auto 5%;
   padding-top: 5%;
-  color: #f2f2f2;
+  color: var(--portfolioWhite);
   font-family: Arial, Helvetica, sans-serif;
   font-size: xx-large;
 }
@@ -362,10 +369,10 @@ h3 {
   bottom: 10%;
   right: 5%;
   z-index: 99;
-  border: 2px solid black;
+  border: 2px solid var(--portfolioBlack);
   outline: none;
-  background-color: #3f0202;
-  color: white;
+  background-color: var(--portfolioDarkRed);
+  color: var(--portfolioWhite);
   cursor: pointer;
   padding: 1%;
   border-radius: 50%;
@@ -378,11 +385,11 @@ h3 {
 }
 
 #scrollToTopBtn:hover {
-  background-color: #595959;
+  background-color: var(--portfolioGrey);
 }
 
 .arrow {
-  border: solid white;
+  border: solid var(--portfolioWhite);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 4px;
@@ -399,7 +406,7 @@ h3 {
 }
 
 #scrollToTopBtn:hover .arrow.up {
-  border-color: #3f0202;
+  border-color: var(--portfolioDarkRed);
 }
 
 /* Scrollbar */
@@ -418,14 +425,14 @@ h3 {
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-  background: #595959;
-  border: 2px solid #f2f2f2;
+  background: var(--portfolioGrey);
+  border: 2px solid var(--portfolioWhite);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f2f2f2;
-  border: 2px solid #590404;
+  background: var(--portfolioWhite);
+  border: 2px solid var(--portfolioRed);
 }

@@ -16,6 +16,8 @@
       format("woff");
 }
 
+@import url("https://use.typekit.net/bdv5kew.css");
+
 :root {
   --portfolioWhite: #f2f2f2;
   --portfolioGrey: #595959;

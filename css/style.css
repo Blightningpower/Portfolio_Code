@@ -16,6 +16,7 @@
       format("woff");
 }
 
+/* "lato" font: */
 @import url("https://use.typekit.net/bdv5kew.css");
 
 :root {
@@ -29,7 +30,7 @@
 
 * {
   /*code applied to all HTML tags*/
-  font-family: "MX", Arial, "Lucida Console";
+  font-family: "MX", Arial, "lato" "Lucida Console";
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;

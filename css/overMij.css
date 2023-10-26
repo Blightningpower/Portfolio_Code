@@ -7,19 +7,15 @@ ul {
     flex-direction: column;
 }
 
-.fade-in-image {
+.image {
     width: 20vw;
     height: fit-content;
     max-height: 47vh;
     float: right;
     margin: 1% 5%;
-    opacity: 0;
-    transition: opacity ease-in;
+    opacity: 1;
 }
 
-.fade-in-image.show {
-    opacity: 1; /* Set opacity to 1 to make the image visible */
-  }
   
 .textSpace1 {
     background-color: black;

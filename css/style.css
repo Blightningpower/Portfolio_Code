@@ -30,7 +30,7 @@
 
 * {
   /*code applied to all HTML tags*/
-  font-family: "MX", Arial, "lato" "Lucida Console";
+  font-family: "MX", Arial, "lato","Lucida Console";
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
@@ -352,6 +352,7 @@ h3 {
   margin: 0 auto 2%;
   color: var(--portfolioWhite);
   display: flex;
+  font-family: "MX", "Lucida Console";
 }
 
 .overMijSubtitle {

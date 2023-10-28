@@ -1,3 +1,6 @@
+/* "lato" font: */
+@import url("https://use.typekit.net/bdv5kew.css");
+
 @font-face {
   font-family: "MX";
   src: url("https://blightningpower.github.io/Portfolio_Code/mx-2-font/MX-Regular.woff2")
@@ -16,14 +19,11 @@
       format("woff");
 }
 
-/* "lato" font: */
-@import url("https://use.typekit.net/bdv5kew.css");
-
 :root {
   --portfolioWhite: #f2f2f2;
   --portfolioGrey: #595959;
   --porfolioDarkRed: #3f0202;
-  --portfolioBlack: #260202;
+  --portfolioBlack: #0D0D0D;
   --portfolioRed: #590404;
   --hyperLinkBlue: #0000ff;
 }
@@ -146,6 +146,23 @@ h3 {
   margin: 9% 0 0 0;
 }
 
+.textRestFname,
+.textRestLname {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  height: 21.105vh;
+  margin-top: 1%;
+}
+
+.logoLink {
+  transition: 0s;
+}
+
+.logoHover:hover {
+  cursor: pointer;
+}
+
 /* .logoBavli, .logoArmanyous {
     display: flex;
     align-items: center;
@@ -161,15 +178,6 @@ h3 {
   left: 0;
   right: 0;
   transition: all 1s linear;
-}
-
-.textRestFname,
-.textRestLname {
-  position: absolute;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-  height: 21.105vh;
-  margin-top: 1%;
 }
 
 @media screen and (min-width: 1279px) {

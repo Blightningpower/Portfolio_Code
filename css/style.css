@@ -319,9 +319,13 @@ h3 {
 }
 
 .link {
-  color: var(--hyperLinkBlue);
   font-family: Arial, Helvetica, sans-serif !important;
-  text-decoration: underline;
+  color: #919191;
+  font-style: italic;
+}
+
+.link:hover {
+  color: var(--portfolioWhite)
 }
 
 .homepageLink,
@@ -405,6 +409,10 @@ h3 {
   background-color: var(--portfolioWhite);
 }
 
+#scrollToTopBtn:hover .arrow.up {
+  border-color: var(--portfolioDarkRed);
+}
+
 .arrow {
   border: solid var(--portfolioWhite);
   border-width: 0 3px 3px 0;
@@ -421,13 +429,6 @@ h3 {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
-
-#scrollToTopBtn:hover .arrow.up {
-  border-color: var(--portfolioDarkRed);
-}
-
-/* Scrollbar */
-/* width */
 
 ::-webkit-scrollbar {
   width: 18px;

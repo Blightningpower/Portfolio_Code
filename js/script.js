@@ -11,6 +11,28 @@ const textRestLname = document.querySelector('.textRestLname');
 const logoBavli = document.querySelector('.logoBavli');
 const logoArmanyous = document.querySelector('.logoArmanyous');
 
+if (!localStorage.getItem('visitedBefore')) {
+  image.addEventListener('transitionend', () => {
+    fadeInElements.classList.add('fadeIn');
+    copyRightText.classList.add('fadeIn');
+    fadeInElements.classList.remove('fadeInElements');
+  });
+
+  setTimeout(() => {
+    image.classList.add('fadeOut');
+    copyRightText.classList.add('fadeIn');
+    copyRightText.style.transition = 'opacity 3.5s ease-in';
+    copyRightText.style.opacity = '1';
+  }, 1000);
+
+  localStorage.setItem('visitedBefore', true);
+} else {
+  fadeInElements.classList.add('fadeIn');
+  copyRightText.classList.add('fadeIn');
+  copyRightText.style.opacity = '1';
+  image.style.opacity = '0';
+}
+
 function showName() {
   if (window.innerWidth <= 1230) {
     logoB.style.left = '-20%';
@@ -33,7 +55,7 @@ function showName() {
   }
 }
 
-function shrimpName() {
+function hideName() {
   logoB.style.left = '0';
   logoA.style.left = '-2%';
   textRestFname.style.opacity = '0';
@@ -46,7 +68,7 @@ let clickCount = 0;
 
 function toggleFunctions() {
   if (clickCount % 2 === 0) {
-    shrimpName();
+    hideName();
   } else {
     showName();
   }
@@ -56,21 +78,6 @@ function toggleFunctions() {
 // Add 'click' event listeners to both 'logoA' and 'logoB'
 logoA.addEventListener('click', toggleFunctions);
 logoB.addEventListener('click', toggleFunctions);
-
-// Voeg event listener toe aan 'image' voor de overgang
-image.addEventListener('transitionend', () => {
-  fadeInElements.classList.add('fadeIn');
-  copyRightText.classList.add('fadeIn');
-  fadeInElements.classList.remove('fadeInElements');
-});
-
-// Stel de initiële stijl van 'image' in
-setTimeout(() => {
-  image.classList.add('fadeOut');
-  copyRightText.classList.add('fadeIn');
-  copyRightText.style.transition = 'opacity 3.5s ease-in';
-  copyRightText.style.opacity = '1';
-}, 1000);
 
 // Selecteer alle elementen met de class 'logoHover'
 const logoHoverElements = document.querySelectorAll('.logoHover');

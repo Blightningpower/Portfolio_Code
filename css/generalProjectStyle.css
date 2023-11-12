@@ -8,6 +8,7 @@ h1 {
 
 h3 {
   padding-top: 10%;
+  margin: 0 auto;
 }
 
 video {
@@ -43,9 +44,9 @@ blockquote {
 
 .middleText {
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  max-width: max-content;
-  margin: 5% auto;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 57vw;
+    margin: auto;
 }
 
 .subtitle {
@@ -61,12 +62,23 @@ blockquote {
   font-weight: 400;
 }
 
-cite, cite a, cite span {
+cite, cite span {
   color: #919191;
   font-family: Arial, Helvetica, sans-serif !important;
-  font-style: italic;
   text-decoration: none;
   font-size: medium;
+}
+
+cite a{
+  font-style: italic;
+  color: #919191;
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-decoration: none;
+  font-size: medium;
+}
+
+cite a:hover {
+  color: var(--portfolioWhite);
 }
 
 img:hover,
@@ -77,7 +89,7 @@ img:focus {
 .textSpace {
   background-color: black;
   border: 2px solid #595959;
-  margin: auto;
+  margin: auto auto 10%;
   min-width: 87vw;
   max-width: 95vw;
   padding: 0 5% 2% 5%;
@@ -93,17 +105,6 @@ img:focus {
 .textSpace ol li span {
   font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-[alt="Afbeelding1"],
-[alt="Afbeelding2"],
-[alt="Afbeelding8"] {
-  max-width: 30vw;
-  border: 2px solid white;
-}
-
-[alt="Afbeelding6"] {
-  max-width: 20vw;
 }
 
 .sideText {
@@ -157,7 +158,7 @@ a span {
   color: #f2f2f2;
 }
 
-[alt="pdf_Logo"], [alt="Double Life Challenge.zip"] {
+[alt="pdf_Logo.png"], [alt="Double Life Challenge.zip"] {
   max-width: 11vw;
   display: flex;
   flex-direction: column;
@@ -178,6 +179,7 @@ a span {
 .alignTextandImg {
   display: flex;
   padding-top: 5%;
+  align-items: center
 }
 
 .whiteLineDiv {

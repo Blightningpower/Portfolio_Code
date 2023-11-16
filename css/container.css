@@ -389,7 +389,7 @@ cursor: pointer;
   max-width: 77px;
   min-height: 72px;
   transition: 0.5s ease-in-out;
-  margin: 48% 0 auto;
+  margin: 48% 3% auto;
 }
 
 .sideArrows:hover {

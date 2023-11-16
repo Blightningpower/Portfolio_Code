@@ -78,7 +78,7 @@ cite a{
 }
 
 cite a:hover {
-  color: var(--portfolioWhite);
+  color: var(--portfolioGrey);
 }
 
 img:hover,
@@ -127,9 +127,10 @@ img:focus {
 .imageDiv {
   display: flex;
   flex-direction: column;
-  padding: 0 0 9%;
   min-width: 31vw;
   max-width: 50vw;
+  align-items: center;
+  margin: 10% 0;
 }
 
 .imageUndertitle {
@@ -178,7 +179,7 @@ a span {
 
 .alignTextandImg {
   display: flex;
-  padding-top: 5%;
+  padding: 5% 0 5%;
   align-items: center
 }
 

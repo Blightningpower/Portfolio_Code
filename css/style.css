@@ -103,9 +103,9 @@ h3, h4 {
 }
 
 .fade-out-image {
-  transition: opacity 1s ease-out;
-  min-width: 50%;
-  max-width: 50%;
+  transition: opacity 3s ease-out;
+  min-width: 30%;
+  max-width: 30%;
   position: absolute;
   margin: auto;
 }
@@ -162,11 +162,6 @@ h3, h4 {
 .logoHover:hover {
   cursor: pointer;
 }
-
-/* .logoBavli, .logoArmanyous {
-    display: flex;
-    align-items: center;
-} */
 
 .logoB,
 .logoA {

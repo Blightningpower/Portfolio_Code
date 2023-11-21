@@ -3,10 +3,8 @@
 
 @font-face {
   font-family: "MX";
-  src: url("https://blightningpower.github.io/Portfolio_Code/mx-2-font/MX-Regular.woff2")
-      format("woff2"),
-    url("https://blightningpower.github.io/Portfolio_Code/mx-2-font/MX-Regular.woff")
-      format("woff");
+  src: url("https://blightningpower.github.io/Portfolio_Code/mx-2-font/MX-Regular.woff2") format("woff2"),
+    url("https://blightningpower.github.io/Portfolio_Code/mx-2-font/MX-Regular.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }
@@ -22,7 +20,7 @@
 
 * {
   /*code applied to all HTML tags*/
-  font-family: "MX","lato", Arial;
+  font-family: "MX", "lato", Arial;
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
@@ -60,24 +58,25 @@ ul {
 }
 
 li {
-    padding: 1% 4%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+  padding: 1% 4%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
 
 ::marker {
   display: none;
 }
 
-h3, h4 {
-    color: var(--portfolioWhite);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    text-transform: capitalize;
-    padding: 0 2%;
-    text-align: center;
-    max-width: fit-content;
-    margin: auto 0 0 0;
+h3,
+h4 {
+  color: var(--portfolioWhite);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0 2%;
+  text-align: center;
+  max-width: fit-content;
+  margin: auto 0 0 0;
 }
 
 /* Homepagecode */
@@ -168,54 +167,55 @@ h3, h4 {
 }
 
 @media screen and (min-width: 1279px) {
-.logoB {
-  left: -25%;
-}
+  .logoB {
+    left: -25%;
+  }
 
-.logoA {
-  left: -5%;
-}
+  .logoA {
+    left: -5%;
+  }
 
-.textRestFname,
-.textRestLname {
-  position: absolute;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-  height: 21.105vh;
-  margin-top: 1%;
-}
+  .textRestFname,
+  .textRestLname {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    height: 21.105vh;
+    margin-top: 1%;
+  }
 
-.textRestFname {
-  left: 24%;
-}
+  .textRestFname {
+    left: 24%;
+  }
 
-.textRestLname {
-  right: 11%;
-}
+  .textRestLname {
+    right: 11%;
+  }
 }
 
 @media screen and (max-width: 1230px) {
+
   .textRestFname,
   .textRestLname {
     transform: scale(0.5);
-    
+
   }
 
   .logoB {
     left: -20%;
   }
-  
+
   .logoA {
     right: 5%;
   }
-  
+
   .textRestFname {
     top: 16%;
     left: 22%;
     opacity: 1;
     font-size: 2rem;
   }
-  
+
   .textRestLname {
     top: 16%;
     left: 42%;
@@ -376,7 +376,7 @@ h3, h4 {
   bottom: 10%;
   right: 5%;
   z-index: 99;
-  border: 2px solid var(--portfolioBlack);
+  border: 2px solid var(--portfolioWhite);
   outline: none;
   background-color: var(--portfolioRed);
   color: var(--portfolioWhite);
@@ -393,14 +393,15 @@ h3, h4 {
 
 #scrollToTopBtn:hover {
   background-color: var(--portfolioGrey);
+  border: 2px solid var(--portfolioDarkRed);
 }
 
 #scrollToTopBtn:active {
-  background-color: var(--portfolioWhite);
+  background-color: var(--portfolioBlack);
 }
 
-#scrollToTopBtn:hover .arrow.up {
-  border-color: var(--portfolioDarkRed);
+.arrow.up {
+  border-color: var(--portfolioWhite);
 }
 
 .arrow {

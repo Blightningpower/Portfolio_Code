@@ -152,13 +152,12 @@ cite {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 2%;
   max-width: -webkit-fill-available;
 }
 
-.lastContainerSection {
+/* .lastContainerSection {
   padding-top: 0;
-}
+} */
 
 .container_content {
   width: 50%;

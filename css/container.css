@@ -11,10 +11,10 @@ html {
 }
 
 section {
-    min-height: 99vh;
-    scroll-snap-align: start;
-    border-bottom: 2px dotted #f2f2f2;
-    flex-direction: column;
+  min-height: 99vh;
+  scroll-snap-align: start;
+  border-bottom: 2px dotted #f2f2f2;
+  flex-direction: column;
 }
 
 :root {
@@ -70,27 +70,27 @@ cite {
 }
 
 .container {
-    min-width: -webkit-fill-available;
-    max-width: -webkit-fill-available;
-    min-height: 86vh;
-    align-items: center;
-    color: #fff;
-    background-color: #0d0d0d;
-    position: relative;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    opacity: 1;
-    outline: 2px solid;
-    transform: scale(0.8);
-    display: flex;
-    opacity: 1;
-    padding: 1% 0;
+  min-width: -webkit-fill-available;
+  max-width: -webkit-fill-available;
+  min-height: 86vh;
+  align-items: center;
+  color: #fff;
+  background-color: #0d0d0d;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  opacity: 1;
+  outline: 2px solid;
+  transform: scale(0.8);
+  display: flex;
+  opacity: 1;
+  padding: 1% 0;
 }
 
 @media screen and (max-width: 1220px) {
   .container {
     font-size: small;
   }
-  
+
 }
 
 @media screen and (max-width: 870px) {
@@ -98,7 +98,7 @@ cite {
     transform: scale(0.9);
     font-size: small;
   }
-  
+
 }
 
 @media screen and (max-width: 765px) {
@@ -107,7 +107,7 @@ cite {
     font-size: small;
     min-width: 110vw;
   }
-  
+
 }
 
 @media screen and (max-width: 655px) {
@@ -115,14 +115,14 @@ cite {
     transform: scale(0.7);
     min-width: 130vw;
   }
-  
+
 }
 
 @media screen and (max-width: 555px) {
   .container {
     transform: scale(0.6);
   }
-  
+
 }
 
 /* This is for the scrolldown effect */
@@ -306,27 +306,36 @@ h2 {
   0% {
     opacity: 0;
   }
+
   40% {
     opacity: 1;
   }
+
   80% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+  {
   0% {
     opacity: 0;
   }
+
   40% {
     opacity: 1;
   }
+
   80% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -334,17 +343,20 @@ h2 {
 
 .arrows path.a1 {
   animation-delay: -1s;
-  -webkit-animation-delay: -1s; /* Safari Ã¥â€™Å’ Chrome */
+  -webkit-animation-delay: -1s;
+  /* Safari Ã¥â€™Å’ Chrome */
 }
 
 .arrows path.a2 {
   animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s; /* Safari Ã¥â€™Å’ Chrome */
+  -webkit-animation-delay: -0.5s;
+  /* Safari Ã¥â€™Å’ Chrome */
 }
 
 .arrows path.a3 {
   animation-delay: 0s;
-  -webkit-animation-delay: 0s; /* Safari Ã¥â€™Å’ Chrome */
+  -webkit-animation-delay: 0s;
+  /* Safari Ã¥â€™Å’ Chrome */
 }
 
 .arrowsSmall {
@@ -357,7 +369,7 @@ h2 {
 }
 
 .arrowsSmall:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
 .arrowsSmall path {
@@ -370,17 +382,20 @@ cursor: pointer;
 
 .arrowsSmall path.a1 {
   animation-delay: -1s;
-  -webkit-animation-delay: -1s; /* Safari and Chrome */
+  -webkit-animation-delay: -1s;
+  /* Safari and Chrome */
 }
 
 .arrowsSmall path.a2 {
   animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s; /* Safari and Chrome */
+  -webkit-animation-delay: -0.5s;
+  /* Safari and Chrome */
 }
 
 .arrowsSmall path.a3 {
   animation-delay: 0s;
-  -webkit-animation-delay: 0s; /* Safari and Chrome */
+  -webkit-animation-delay: 0s;
+  /* Safari and Chrome */
 }
 
 .sideArrows {
@@ -393,30 +408,33 @@ cursor: pointer;
 
 .sideArrows:hover {
   cursor: pointer;
-  }
-  
-  .sideArrows path {
-    stroke: #f2f2f2;
-    fill: transparent;
-    stroke-width: 1px;
-    animation: arrow 2s infinite;
-    -webkit-animation: arrow 2s infinite;
-  }
-  
-  .sideArrows path.a1 {
-    animation-delay: -1s;
-    -webkit-animation-delay: -1s; /* Safari and Chrome */
-  }
-  
-  .sideArrows path.a2 {
-    animation-delay: -0.5s;
-    -webkit-animation-delay: -0.5s; /* Safari and Chrome */
-  }
-  
-  .sideArrows path.a3 {
-    animation-delay: 0s;
-    -webkit-animation-delay: 0s; /* Safari and Chrome */
-  }
+}
+
+.sideArrows path {
+  stroke: #f2f2f2;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+.sideArrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari and Chrome */
+}
+
+.sideArrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari and Chrome */
+}
+
+.sideArrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari and Chrome */
+}
 
 .flexTitle {
   display: flex;
@@ -440,7 +458,7 @@ cursor: pointer;
   margin: 0 auto;
 }
 
- .flexImgAndSrc {
+.flexImgAndSrc {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -458,20 +476,30 @@ cursor: pointer;
   min-width: fit-content;
 }
 
-.smallWebLink img:hover{
+.smallWebLink img:hover {
   border: 3px solid blue;
   cursor: pointer;
   border-radius: 50%;
   padding: 7%;
 }
 
-[alt="smallPdf_Logo"] {
+.small, [alt="smallPdf_Logo.png"], [alt="zip.png"], [alt="smallLogotjewit.png"] {
   max-width: 4vw;
   min-width: fit-content;
   display: flex;
   flex-direction: column;
   max-height: 15vh;
   margin: auto;
+}
+
+[alt="smallAdobe_XD_logo.png"] {
+  max-width: 4vw;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  max-height: 15vh;
+  margin: auto;
+  border-radius: 50%;
 }
 
 .miniSrcLinksArea {
@@ -501,6 +529,6 @@ cursor: pointer;
   margin-bottom: revert;
 }
 
-/* @media screen and (min-width: 690px) and (max-width: 870px) {
- 
-} */
+.h1Title {
+  padding-bottom: 0 !important;
+}

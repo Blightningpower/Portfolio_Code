@@ -94,7 +94,7 @@ h4 {
 }
 
 .fade-out-image {
-  transition: opacity 3s ease-out;
+  transition: opacity 2s ease-out;
   min-width: 30%;
   max-width: 30%;
   position: absolute;
@@ -355,6 +355,7 @@ h4 {
   font-family: 'lato';
   font-size: xx-large;
   font-weight: revert;
+  padding-bottom: 5%;
 }
 
 .overMijSubtitle {

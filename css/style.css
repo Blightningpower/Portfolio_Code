@@ -240,7 +240,8 @@ h4 {
 .overMijText,
 .leeruitkomstenText {
   color: var(--portfolioWhite);
-  font-size: larger;
+  font-size: x-large;
+  font-weight: 700;
 }
 
 .overMijText:hover,

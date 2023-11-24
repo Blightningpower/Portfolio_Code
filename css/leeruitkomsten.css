@@ -30,6 +30,7 @@ body {
   background-color: #000000;
   outline: 2px solid #595959;
   text-align: center;
+  box-shadow: 0px 4px 8px var(--portfolioGrey);
 }
 
 .learningOutcome:hover {
@@ -37,8 +38,14 @@ body {
   cursor: pointer;
 }
 
+.learningOutcome:active {
+  transform: scale(0.8);
+}
+
 .learningOutcome span {
-  color: #f2f2f2;
+  color: var(--portfolioWhite);
+    font-size: larger;
+    font-weight: 600;
 }
 
 [alt="Interactive_Media_Icon"],

@@ -203,18 +203,19 @@ p {
 .btns_more {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: larger;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
   background-color: var(--contrast-color);
   border-radius: 50px;
   border: none;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 6px var(--portfolioGrey);
   cursor: pointer;
   position: relative;
   overflow: hidden;
   margin: 10%;
+  font-weight: 900;
 }
 
 .btns_more:before {
@@ -483,7 +484,10 @@ h2 {
   padding: 7%;
 }
 
-.small, [alt="smallPdf_Logo.png"], [alt="zip.png"], [alt="smallLogotjewit.png"] {
+.small,
+[alt="smallPdf_Logo.png"],
+[alt="zip.png"],
+[alt="smallLogotjewit.png"] {
   max-width: 4vw;
   min-width: fit-content;
   display: flex;

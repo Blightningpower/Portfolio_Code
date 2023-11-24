@@ -20,7 +20,7 @@
 
 * {
   /*code applied to all HTML tags*/
-  font-family: "MX", "lato", Arial;
+  font-family: "lato", Arial, Helvetica, sans-serif, "MX";
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
@@ -44,7 +44,6 @@ body {
 
 p {
   color: var(--portfolioWhite);
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 22px;
   padding: 0 5%;
 }

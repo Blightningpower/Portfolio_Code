@@ -7,7 +7,7 @@ h1 {
 }
 
 h3 {
-  padding-top: 10%;
+  padding: 10% 0 3%;
   margin: 0 auto;
 }
 
@@ -22,7 +22,6 @@ img {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
   max-width: 62vw;
   margin: auto;
@@ -135,7 +134,7 @@ img:focus {
   min-width: 31vw;
   max-width: 50vw;
   align-items: center;
-  margin: 10% 0;
+  margin: 10% auto;
 }
 
 .imageUndertitle {
@@ -209,4 +208,27 @@ a span {
 
 .paddingBottom {
   padding-bottom: 5%;
+}
+
+.flexText {
+  display: block;
+}
+
+.cropContent {
+  border: 2px solid var(--portfolioGrey);
+  padding: 1%;
+  max-width: 29vw;
+}
+
+.flexImagesMiddle {
+  margin: auto;
+}
+
+.flexImagesMiddleFlex {
+  margin: auto;
+  display: flex;
+}
+
+.maxWidth40vw {
+  max-width: 40vw !important;
 }

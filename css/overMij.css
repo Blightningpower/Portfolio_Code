@@ -5,6 +5,7 @@ div {
 ul {
     max-height: 94vh;
     flex-direction: column;
+    max-width: 55vw;
 }
 
 .image {
